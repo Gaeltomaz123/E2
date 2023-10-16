@@ -1,24 +1,22 @@
 package com.pucrs;
 
-public class Locomotiva {
-    private int idLocomotiva;
+public class Locomotiva  extends Carro {
     private double pesoMaximo;
     private int numeroMaxVagoes;
-    private Composicao composicao;
 
-    public Locomotiva(int idLocomotiva, double pesoMaximo, int numeroMaxVagoes, Composicao composicao){
-        this.idLocomotiva = idLocomotiva;
+    public Locomotiva(int id, double pesoMaximo, int numeroMaxVagoes, Composicao composicao){
+        super(id, composicao);
         this.pesoMaximo = pesoMaximo;
         this.numeroMaxVagoes = numeroMaxVagoes;
-        this.composicao = composicao;
+        
     }
 
     public int getIdLocomotiva() {
-        return idLocomotiva;
+        return id;
     }
 
-    public void setIdLocomotiva(int idLocomotiva) {
-        this.idLocomotiva = idLocomotiva;
+    public void setIdLocomotiva(int id) {
+        this.id = id;
     }
 
     public double getPesoMaximo() {

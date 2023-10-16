@@ -53,10 +53,9 @@ public class Menu {
                             teclado.nextLine();
                         }
                     } while (continua);
-                    ArrayList<Locomotiva> Locomotivas = new ArrayList<Locomotiva>();
-                    Locomotivas.add(arrayLocomotivas.get(0));
-                    ArrayList<Vagao> Vagoes = new ArrayList<Vagao>();
-                    arrayComposicao.add(new Composicao(id, Locomotivas, Vagoes));
+                    ArrayList<Carro> carro = new ArrayList<Carro>();
+                    carro.add(arrayLocomotivas.get(0));
+                    arrayComposicao.add(new Composicao(id, carro));
                     arrayLocomotivas.remove(0);
                     System.out.println("\nTrem criado com sucesso!");
                     break;

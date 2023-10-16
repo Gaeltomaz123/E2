@@ -1,22 +1,20 @@
 package com.pucrs;
 
-public class Vagao {
-    private int idVagao;
+public class Vagao extends Carro {
     private double capMaxdeCarga;
-    private Composicao composicao;
 
-    public Vagao (int idVagao, double capMaxdeCarga, Composicao composicao){
-        this.idVagao = idVagao;
+    public Vagao (int id, double capMaxdeCarga, Composicao composicao){
+        super(id, composicao);
         this.capMaxdeCarga = capMaxdeCarga;
         this.composicao = composicao;    
     }
 
     public int getIdVagao() {
-        return idVagao;
+        return id;
     }
 
-    public void setIdVagao(int idVagao) {
-        this.idVagao = idVagao;
+    public void setIdVagao(int id) {
+        this.id = id;
     }
 
     public double getCapMaxdeCarga() {
@@ -27,11 +25,11 @@ public class Vagao {
         this.capMaxdeCarga = capMaxdeCarga;
     }
 
-    public Composicao getComposicaoVagao() {
+    public Composicao getComposicao() {
         return composicao;
     }
 
-    public void setComposicaoVagao(Composicao composicao) {
+    public void setComposicao(Composicao composicao) {
         this.composicao = composicao;
     }
 }
